@@ -1,0 +1,46 @@
+// FRONT
+
+<div class="card">
+    <h2>{{Question}}</h2>
+</div>
+
+
+
+
+//BACK
+
+{{FrontSide}}
+<div class="card">
+    <hr>
+    <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <p>{{Answer}}</p>
+    </div>
+
+    {{#Code}}
+    <div class="code-block">
+        <p><strong>Code Example:</strong></p>
+        <pre><code>{{Code}}</code></pre>
+    </div>
+    {{/Code}}
+
+    {{#UseCase}}
+    <div class="use-case">
+        <p><strong>Use Case:</strong></p>
+        <p>{{UseCase}}</p>
+    </div>
+    {{/UseCase}}
+
+    {{#Extra}}
+    <div class="extra">
+        <p><strong>Extra Notes:</strong></p>
+        <p>{{Extra}}</p>
+    </div>
+    {{/Extra}}
+
+    <hr>
+    <p class="tags">Tags: {{Tags}}</p>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>

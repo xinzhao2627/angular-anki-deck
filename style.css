@@ -1,0 +1,65 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+/* If using Cascadia Code locally, download from Microsoft */
+@font-face {
+font-family: 'Cascadia Code';
+src: url('https://github.com/microsoft/cascadia-code/releases/latest/download/CascadiaCode.ttf');
+font-weight: normal;
+}
+
+/* Card styling */
+.card {
+font-family: 'Inter', sans-serif; /* Modern, clean font */
+text-align: left;
+padding: 15px;
+font-size: 18px;
+background: var(--background);
+color: var(--text-color);
+}
+.answer {
+letter-spacing: 1px;
+}
+.use-case{
+letter-spacing: 1px;
+}
+
+/* Topic header */
+.topic {
+font-size: 16px;
+font-weight: bold;
+color: #ff9800;
+}
+
+/* Code block styling */
+.code-block {
+background: #2d2d2d;
+color: #f8f8f2;
+padding: 10px;
+border-radius: 5px;
+font-family: 'Consolas'
+font-size: 16px;
+overflow-x: auto;
+}
+
+/* Tag styling */
+.tags {
+font-size: 14px;
+color: #888888;
+font-weight: 700;
+}
+
+/* Dark mode support */
+:root {
+--background: transparent;
+--text-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--background: #121212;
+--text-color: #ffffff;
+}
+}
+
