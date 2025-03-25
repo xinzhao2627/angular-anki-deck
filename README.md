@@ -6,6 +6,7 @@ It features everything on the course, and will be continously updated for new co
 - css style preset (with highlight.js for code snippet themes)
 - front and back template
 - the main angular apkg deck
+- _(note: While reviewing cards, don't edit it in Ankidroid due to codeblocks being forcibly re-written. Instead do it in anki desktop)_
 
 ## card fields:
 - Question (Front)
